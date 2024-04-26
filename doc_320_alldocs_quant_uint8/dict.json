@@ -1,0 +1,94 @@
+{
+    "indexes": {
+        "detections": 3,
+        "classes": 0,
+        "scores": 1,
+        "boxes": 2
+    },
+    "size": [320, 320],
+    "classes" :
+        [{
+            "name": "cnh_doc_a",
+            "id": "1"
+        },
+        {
+            "name": "cnh_doc_ab",
+            "id": "2"
+        },
+        {
+            "name": "cnh_doc_b",
+            "id": "3"
+        },
+        {
+            "name": "cpfcel_doc_a",
+            "id": "4"
+        },
+        {
+            "name": "cpfcel_doc_ab",
+            "id": "5"
+        },
+        {
+            "name": "cpfcel_doc_b",
+            "id": "6"
+        },
+        {
+            "name": "cpfpvc_doc_a",
+            "id": "7"
+        },
+        {
+            "name": "cpfpvc_doc_ab",
+            "id": "8"
+        },
+        {
+            "name": "cpfpvc_doc_b",
+            "id": "9"
+        },
+        {
+            "name": "dni_doc_a",
+            "id": "10"
+        },
+        {
+            "name": "dni_doc_ab",
+            "id": "11"
+        },
+        {
+            "name": "dni_doc_b",
+            "id": "12"
+        },
+        {
+            "name": "oab_doc_a",
+            "id": "13"
+        },
+        {
+            "name": "oab_doc_ab",
+            "id": "14"
+        },
+        {
+            "name": "oab_doc_b",
+            "id": "15"
+        },
+        {
+            "name": "rg_doc_a",
+            "id": "16"
+        },
+        {
+            "name": "rg_doc_ab",
+            "id": "17"
+        },
+        {
+            "name": "rg_doc_b",
+            "id": "18"
+        },
+        {
+            "name": "rne_doc_a",
+            "id": "19"
+        },
+        {
+            "name": "rne_doc_ab",
+            "id": "20"
+        },
+        {
+            "name": "rne_doc_rne_doc_bab",
+            "id": "21"
+        }]
+}
