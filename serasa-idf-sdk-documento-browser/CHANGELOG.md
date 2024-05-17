@@ -1,3 +1,9 @@
+## [4.5.1]
+- Melhoria: Fluxo de upload de outros documentos digitais.
+- Melhoria: Alteração de texto na tela de seleção de documentos.
+- Correção: Responsividade dos frames.
+- Correção: Tratamento da nomenclatura dos arquivos nos fluxos de upload de documentos.
+
 ## [4.5.0]
 - Melhoria: Inclusão de limitação de páginas no fluxo de upload da CNH Digital.
 - Melhoria: Exibição do botão de captura manual com base na quantidade de tentativas.
