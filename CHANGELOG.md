@@ -1,10 +1,12 @@
 ## [4.6.0]
 - Melhoria: Lógica de upload de documentos digitais
 - Melhoria: Lógica da tela de upload de documentos
-- Melhoria: Nova tela de captura
-- Melhoria: Nova tela de preview
-- Melhoria: Nova tela de loading
-- Melhoria: Melhoria no wizard
+- Melhoria: Lógica da tela de captura de documentos (Distanciamento focal e enquadramento)
+- Melhoria: Nova tela de captura com contagem regressiva
+- Melhoria: Nova tela de pré-visualização da imagem do documento
+- Melhoria: Nova tela de carregamento
+- Melhoria: Melhorias na tela de dicas
+- Melhoria: Adição de novos feedbacks de forma instantânea durante a captura
 - Melhoria: Log de informações do dispositivo
 
 ## [4.5.1]
