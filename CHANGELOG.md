@@ -1,11 +1,11 @@
 ## [4.6.0]
-- Melhoria: Lógica de captura de documentos digitais
+- Melhoria: Lógica de upload de documentos digitais
 - Melhoria: Lógica da tela de upload de documentos
 - Melhoria: Nova tela de captura
 - Melhoria: Nova tela de preview
 - Melhoria: Nova tela de loading
 - Melhoria: Melhoria no wizard
-- Melhoria: Adiciona informações do dispositivo
+- Melhoria: Log de informações do dispositivo
 
 ## [4.5.1]
 - Melhoria: Inclusão do novo fluxo de outros documentos digitais.
