@@ -1,3 +1,6 @@
+## [4.6.1]
+- Melhoria: Lógica de exceção da captura de documentos.
+
 ## [4.6.0]
 - Melhoria: Lógica de upload de documentos digitais
 - Melhoria: Lógica da tela de upload de documentos
