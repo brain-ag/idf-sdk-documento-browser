@@ -1,0 +1,128 @@
+* {
+  background-color: #fff;
+}
+
+.ourSection {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  height: 168px;
+}
+
+.exitBtnParent {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.title {
+  color: #333;
+  font-family: 'Roboto', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 10vw;
+  margin-top: 40px;
+}
+
+.desc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.desc p {
+  margin: 4px;
+  color: #636f88;
+  font-family: 'Roboto', serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+
+.bloco {
+  width: 6px;
+  height: 6px;
+  margin-right: 5px;
+  flex-shrink: 0;
+  background: #636f88;
+}
+
+.carouselAnim {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageCarousel {
+  position: absolute;
+  top: 0vh;
+  left: 8vw;
+}
+.footer {
+  display: none !important;
+  position: absolute;
+  bottom: 0;
+  align-self: center;
+  border-radius: 10px 10px 0px 0px;
+  background: #fff;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+.link {
+  background-color: #fff !important; 
+  text-decoration: none;
+}
+
+.footerBtn {
+  display: flex;
+  width: 312px;
+  height: 48px;
+  padding: 0px 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 48px;
+  background-color: #002dd1;
+  margin-top: 15px;
+}
+
+.footerBtn p {
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  font-family: 'Roboto', serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.footerBtn2 {
+  background-color: transparent;
+}
+.footerBtn2 p {
+  background-color: transparent;
+  color: #002dd1;
+  text-align: center;
+  font-family: 'Roboto', serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: transparent;
+}
