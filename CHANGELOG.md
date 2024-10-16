@@ -1,3 +1,8 @@
+## [4.6.2]
+-- Melhoria: Qualidade da captura de documentos aprimorada.
+-- Correção: Ajustes de responsividade
+-- Correção: Ajuste no retorno de arquivo para documentos digitais.
+
 ## [4.6.1]
 - Melhoria: Lógica de exceção da captura de documentos.
 
