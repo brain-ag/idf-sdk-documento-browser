@@ -1,7 +1,8 @@
 ## [4.6.2]
--- Melhoria: Qualidade da captura de documentos aprimorada.
--- Correção: Ajustes de responsividade
--- Correção: Ajuste no retorno de arquivo para documentos digitais.
+- Melhoria: Qualidade da captura de documentos aprimorada.
+- Melhoria: Adiciona parâmetro para timeout ativar a captura manual
+- Correção: Ajustes de responsividade
+- Correção: Ajuste no retorno de arquivo para documentos digitais.
 
 ## [4.6.1]
 - Melhoria: Lógica de exceção da captura de documentos.
@@ -18,7 +19,7 @@
 - Melhoria: Log de informações do dispositivo
 
 ## [4.5.1]
-- Melhoria: Inclusão do novo fluxo de outros documentos digitais.
+- Melhoria: Inclusão do novo fluxo de outros documentgit braos digitais.
 
 ## [4.5.0]
 - Melhoria: Inclusão de limitação de páginas no fluxo da CNH Digital.
