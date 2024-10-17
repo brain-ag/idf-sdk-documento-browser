@@ -1,3 +1,7 @@
+## [4.6.3]
+
+- Correção: Retornos dos fluxos de upload.
+
 ## [4.6.2]
 - Melhoria: Qualidade da captura de documentos aprimorada.
 - Melhoria: Adiciona parâmetro para timeout ativar a captura manual
