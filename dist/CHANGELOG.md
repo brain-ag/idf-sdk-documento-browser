@@ -1,5 +1,7 @@
-## [4.6.3]
+## [4.6.4]
+- Correção: Retorno do tipo de documento na captura do lado AB.
 
+## [4.6.3]
 - Correção: Retornos dos fluxos de upload.
 
 ## [4.6.2]
