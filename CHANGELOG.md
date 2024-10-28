@@ -1,7 +1,7 @@
 
 ## [5.0.0]
 - Melhoria: Nova identidade para o fluxo de captura
-- Melhoria: No itentidade para os frames wizard
+- Melhoria: Nova itentidade para os frames wizard
 - Melhoria: Nova identidade para o fluxo de upload de documentos digitais
 - Melhoria: Nova identidade para o fluxo de upload de documentos digitalizados 
 
