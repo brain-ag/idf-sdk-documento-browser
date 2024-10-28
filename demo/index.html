@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"
-    />
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <meta content="utf-8" http-equiv="encoding" />
-    <title>BrScan SDK Documento Web</title>
-    <style>
-      #imgA {
-        display: none;
-        max-width: 40%;
-      }
-      #imgB {
-        display: none;
-        max-width: 40%;
-      }
-      #pdfFrame {
-        display: none;
-        width: 100%;
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="documento"></div>
 
-    <img id="imgA" />
-    <img id="imgB" />
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  <meta content="utf-8" http-equiv="encoding" />
+  <title>BrScan SDK Documento Web</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <iframe id="pdfFrame"></iframe>
+<body>
+  <div id="login" class="login-container">
+    <img src="serasa-experian-logo.png" alt="Logo">
 
-    <!-- <button onclick="iniciaDocumento(true)">Iniciar</button> -->
+    <input id="legacyKey" type="text" placeholder="Chave legada" name="legacyKey">
+    <button id="legacyButton" type="button">Entrar com método legado</button>
 
-    <script src="./js/brscan-sdk-documento-demo.js"></script>
-    <script src="../brscan-sdk-documento.min.js"></script>
-  </body>
+    <input id="clientId" type="text" placeholder="ClientId" name="clientId">
+    <input id="username" type="text" placeholder="Username" name="userName">
+    <input id="password" type="password" placeholder="Password" name="password">
+    <button id="loginButton" type="button">Entrar</button>
+    <div class="error-message" id="error-message">Mensagem de erro aqui</div>
+  </div>
+
+  <div id="documento"></div>
+
+  <div class="sdkResult" id="sdkResult">
+    <div class="imagesResult">
+      <img id="imgA" />
+      <img id="imgB" />
+    </div>
+    <p id="jsonResult"></p>
+  </div>
+
+  <iframe id="pdfFrame"></iframe>
+
+  <!-- <button onclick="iniciaDocumento(true)">Iniciar</button> -->
+
+  <script src="./js/consts.js"></script>
+  <script src="./js/brscan-sdk-documento-demo.js"></script>
+  <script src="../brscan-sdk-documento.min.js"></script>
+</body>
+
 </html>

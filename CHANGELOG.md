@@ -1,17 +1,24 @@
+
+## [5.0.0]
+- Melhoria: Nova identidade para o fluxo de captura
+- Melhoria: No itentidade para os frames wizard
+- Melhoria: Nova identidade para o fluxo de upload de documentos digitais
+- Melhoria: Nova identidade para o fluxo de upload de documentos digitalizados 
+
 ## [4.6.4]
-- Correção: Retorno do tipo de documento na captura do lado AB.
+- Correção: Retorno do tipo de documento na captura do lado AB
 
 ## [4.6.3]
-- Correção: Retornos dos fluxos de upload.
+- Correção: Retornos dos fluxos de upload
 
 ## [4.6.2]
-- Melhoria: Qualidade da captura de documentos aprimorada.
+- Melhoria: Qualidade da captura de documentos aprimorada
 - Melhoria: Adiciona parâmetro para timeout ativar a captura manual
 - Correção: Ajustes de responsividade
-- Correção: Ajuste no retorno de arquivo para documentos digitais.
+- Correção: Ajuste no retorno de arquivo para documentos digitais
 
 ## [4.6.1]
-- Melhoria: Lógica de exceção da captura de documentos.
+- Melhoria: Lógica de exceção da captura de documentos
 
 ## [4.6.0]
 - Melhoria: Lógica de upload de documentos digitais
@@ -25,16 +32,16 @@
 - Melhoria: Log de informações do dispositivo
 
 ## [4.5.1]
-- Melhoria: Inclusão do novo fluxo de outros documentgit braos digitais.
+- Melhoria: Inclusão do novo fluxo de outros documentgit braos digitais
 
 ## [4.5.0]
-- Melhoria: Inclusão de limitação de páginas no fluxo da CNH Digital.
-- Melhoria: Exibição do botão de captura manual com base na quantidade de tentativas.
-- Melhoria: Inclusão do fluxo de upload na lógica de quantidade de tentativas.
-- Correção: Lógica de quantidade de tentativas de captura.
-- Correção: Lógica de captura de outros documentos.
-- Correção: Responsividade do frame de captura de documentos.
-- Correção: Retorno de sucesso no fluxo de upload de documentos digitalizados.
+- Melhoria: Inclusão de limitação de páginas no fluxo da CNH Digital
+- Melhoria: Exibição do botão de captura manual com base na quantidade de tentativas
+- Melhoria: Inclusão do fluxo de upload na lógica de quantidade de tentativas
+- Correção: Lógica de quantidade de tentativas de captura
+- Correção: Lógica de captura de outros documentos
+- Correção: Responsividade do frame de captura de documentos
+- Correção: Retorno de sucesso no fluxo de upload de documentos digitalizados
 
 ## [4.4.8]
 - Melhoria: Fluxo de upload de documentos com captura manual ativada de forma independente.
