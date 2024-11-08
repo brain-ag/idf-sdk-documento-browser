@@ -1,5 +1,7 @@
-## [5.0.0]
-- Correção: Tipificação da CNH Digital
+## [5.0.2]
+- Correção: Seleção da CNH Digital
+- Correção: Responsividade das telas wizard
+- Correção: Responsividade dos botões
 
 ## [5.0.0]
 - Melhoria: Nova identidade para o fluxo de captura
