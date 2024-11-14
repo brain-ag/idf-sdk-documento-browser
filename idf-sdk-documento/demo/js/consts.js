@@ -1,0 +1,1 @@
+const BASE_URL="https://api.serasaexperian.com.br",SERASA_SDK_ENV="prod";

@@ -1,3 +1,7 @@
+## [5.0.3]
+- Melhoria: Feedbacks no frame de captura
+- Correção: Responsividade das telas e ajuste de experiência 
+
 ## [5.0.2]
 - Correção: Seleção da CNH Digital
 - Correção: Responsividade das telas wizard
