@@ -1,3 +1,9 @@
+[5.0.4]
+Correção: Seleção de câmera 
+Correção: Upload de tipos diferentes de documento no fluxo em desktop
+Correção: Funcionamento da captura manual
+Melhoria: Tempo de carregamento inicial
+
 ## [5.0.3]
 - Melhoria: Feedbacks no frame de captura
 - Correção: Responsividade das telas e ajuste de experiência 
