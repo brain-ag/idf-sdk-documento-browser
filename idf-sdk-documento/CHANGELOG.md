@@ -1,3 +1,10 @@
+[5.0.5]
+- Melhoria: Adiciona feedback para virar documento quando há uma tentativa de capturar o mesmo lado do documento na segunda captura
+- Melhoria: Criptografia (apenas para BFF)
+- Correção: Limite de tentativas
+- Correção: Tela de seleção de documentos quando não há documentos físicos em documentos aceitos pelo cliente
+- Melhoria: Ofuscação de código 
+
 [5.0.4]
 - Correção: Seleção de câmera 
 - Correção: Upload de tipos diferentes de documento no fluxo em desktop
