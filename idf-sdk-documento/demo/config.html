@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <script src="js/config.js"></script>
+    <script>
+        function saveConfigForm() {
+            const config = {
+                tamanhoArquivos: document.getElementById('tamanhoArquivos').value,
+                enviarTxt: document.getElementById('enviarTxt').value,
+                capturaEmDesktop: document.getElementById('capturaEmDesktop').checked,
+                limiteNumeroTentativasErro: document.getElementById('limiteNumeroTentativasErro').value,
+                timeoutCaptura: document.getElementById('timeoutCaptura').value,
+                documentosAceitos: document.getElementById('documentosAceitos').value,
+                wizzard: document.getElementById('wizzard').checked,
+                corPrimary: document.getElementById('corPrimary').value,
+                fontFamily: document.getElementById('fontFamily').value
+            };
+
+            saveConfig(config);
+
+            alert('Configurações salvas!');
+            window.location.href = 'index.html'; // Redireciona para index.html
+        }
+
+        window.onload = function () {
+            const config = loadConfig();
+
+            document.getElementById('tamanhoArquivos').value = config.tamanhoArquivos;
+            document.getElementById('enviarTxt').value = config.enviarTxt;
+            document.getElementById('capturaEmDesktop').checked = config.capturaEmDesktop;
+            document.getElementById('limiteNumeroTentativasErro').value = config.limiteNumeroTentativasErro;
+            document.getElementById('timeoutCaptura').value = config.timeoutCaptura;
+            document.getElementById('documentosAceitos').value = config.documentosAceitos;
+            document.getElementById('wizzard').checked = config.wizzard;
+            document.getElementById('corPrimary').value = config.corPrimary;
+            document.getElementById('fontFamily').value = config.fontFamily;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Configurações</h1>
+    <form onsubmit="saveConfigForm(); return false;">
+        <label for="tamanhoArquivos">Tamanho máximo do arquivo (MB):</label>
+        <input type="number" id="tamanhoArquivos" name="tamanhoArquivos" value="5"><br><br>
+
+        <label for="enviarTxt">Texto do botão de envio:</label>
+        <input type="text" id="enviarTxt" name="enviarTxt" value="Fazer upload"><br><br>
+
+        <label for="capturaEmDesktop">Habilitar Captura de Documentos em Desktop:</label>
+        <input type="checkbox" id="capturaEmDesktop" name="capturaEmDesktop"><br><br>
+
+        <label for="limiteNumeroTentativasErro">Limite de tentativas de erro:</label>
+        <input type="number" id="limiteNumeroTentativasErro" name="limiteNumeroTentativasErro" value="3"><br><br>
+
+        <label for="timeoutCaptura">Timeout para captura automática (ms):</label>
+        <input type="number" id="timeoutCaptura" name="timeoutCaptura" value="120000"><br><br>
+
+        <label for="documentosAceitos">Documentos aceitos (separados por vírgula):</label>
+        <input type="text" id="documentosAceitos" name="documentosAceitos"
+            value="rg,cnh,dni,cin,rne,rnm,cnhdig"><br><br>
+
+        <label for="wizzard">Iniciar Wizard:</label>
+        <input type="checkbox" id="wizzard" name="wizzard"><br><br>
+
+        <label for="corPrimary">Cor primária:</label>
+        <input type="color" id="corPrimary" name="corPrimary" value="#002DD1"><br><br>
+
+        <label for="fontFamily">Fonte:</label>
+        <input type="text" id="fontFamily" name="fontFamily" value="Roboto"><br><br>
+
+        <input type="submit" value="Salvar Configurações">
+    </form>
+</body>
+
+</html>

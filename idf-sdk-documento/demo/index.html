@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1" />
+  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+  <meta content="utf-8" http-equiv="encoding" />
+  <title>BrScan SDK Documento Web</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="serasa-experian-logo.png">
+</head>
+
+<body>
+  <div id="login" class="login-container">
+    <img src="serasa-experian-logo.png" alt="Logo">
+
+    <a href="config.html">Configurações</a>
+
+    <input id="legacyKey" type="text" placeholder="Chave legada" name="legacyKey">
+    <button id="legacyButton" type="button">Entrar com método legado</button>
+
+    <input id="clientId" type="text" placeholder="ClientId" name="clientId">
+    <input id="username" type="text" placeholder="Username" name="userName">
+    <input id="password" type="password" placeholder="Password" name="password">
+    <button id="loginButton" type="button">Entrar</button>
+    <div class="error-message" id="error-message">Mensagem de erro aqui</div>
+  </div>
+
+  <div id="documento"></div>
+
+  <div class="sdkResult" id="sdkResult">
+    <div class="imagesResult">
+      <img id="imgA" />
+      <img id="imgB" />
+    </div>
+    <button id="tryAgain" type="button">Tentar novamente</button>
+    <p id="jsonResult"></p>
+  </div>
+
+  <script src="./js/consts.js"></script>
+  <script src="./js/brscan-sdk-documento-demo.js"></script>
+  <script src="./js/config.js"></script>
+</body>
+
+</html>
