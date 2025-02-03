@@ -14,10 +14,11 @@
                 capturaEmDesktop: document.getElementById('capturaEmDesktop').checked,
                 limiteNumeroTentativasErro: document.getElementById('limiteNumeroTentativasErro').value,
                 timeoutCaptura: document.getElementById('timeoutCaptura').value,
+                cdnModelo: document.getElementById('cdnModelo').value,
                 documentosAceitos: document.getElementById('documentosAceitos').value,
                 wizzard: document.getElementById('wizzard').checked,
                 corPrimary: document.getElementById('corPrimary').value,
-                fontFamily: document.getElementById('fontFamily').value
+                fontFamily: document.getElementById('fontFamily').value,
             };
 
             saveConfig(config);
@@ -38,6 +39,7 @@
             document.getElementById('wizzard').checked = config.wizzard;
             document.getElementById('corPrimary').value = config.corPrimary;
             document.getElementById('fontFamily').value = config.fontFamily;
+            document.getElementById('cdnModelo').value = config.cdnModelo;
         }
     </script>
 </head>
@@ -72,6 +74,11 @@
 
         <label for="fontFamily">Fonte:</label>
         <input type="text" id="fontFamily" name="fontFamily" value="Roboto"><br><br>
+
+
+        <label for="cdnModelo">CDN Modelo:</label>
+        <input type="text" id="cdnModelo" name="cdnModelo" value=""><br><br>
+
 
         <input type="submit" value="Salvar Configurações">
     </form>
