@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurações</title>
+    <script src="js/config.js"></script>
+    <link rel="stylesheet" href="css/config.css">
+    <script>
+        function saveConfigForm() {
+            const config = {
+                tamanhoArquivos: document.getElementById('tamanhoArquivos').value,
+                enviarTxt: document.getElementById('enviarTxt').value,
+                capturaEmDesktop: document.getElementById('capturaEmDesktop').checked,
+                limiteNumeroTentativasErro: document.getElementById('limiteNumeroTentativasErro').value,
+                timeoutCaptura: document.getElementById('timeoutCaptura').value,
+                cdnModelo: document.getElementById('cdnModelo').value,
+                documentosAceitos: document.getElementById('documentosAceitos').value,
+                wizzard: document.getElementById('wizzard').checked,
+                corPrimary: document.getElementById('corPrimary').value,
+                fontFamily: document.getElementById('fontFamily').value,
+                corTextCorpo: document.getElementById('corTextCorpo').value,
+                corTextTitle: document.getElementById('corTextTitle').value,
+                corTextButton: document.getElementById('corTextButton').value,
+                previewTitleSideA: document.getElementById('previewTitleSideA').value,
+                previewTitleSideB: document.getElementById('previewTitleSideB').value
+            };
+
+            localStorage.setItem('config', JSON.stringify(config));
+
+            alert('Configurações salvas!');
+            window.location.href = 'index.html'; // Redireciona para index.html
+        }
+
+        function clearConfigForm() {
+            localStorage.removeItem('config');
+            updateForm();
+        }
+
+        function updateForm() {
+            const config = loadConfig();
+
+            document.getElementById('tamanhoArquivos').value = config.tamanhoArquivos;
+            document.getElementById('enviarTxt').value = config.enviarTxt;
+            document.getElementById('capturaEmDesktop').checked = config.capturaEmDesktop;
+            document.getElementById('limiteNumeroTentativasErro').value = config.limiteNumeroTentativasErro;
+            document.getElementById('timeoutCaptura').value = config.timeoutCaptura;
+            document.getElementById('documentosAceitos').value = config.documentosAceitos;
+            document.getElementById('wizzard').checked = config.wizzard;
+            document.getElementById('corPrimary').value = config.corPrimary;
+            document.getElementById('fontFamily').value = config.fontFamily;
+            document.getElementById('corTextCorpo').value = config.corTextCorpo
+            document.getElementById('corTextTitle').value = config.corTextTitle
+            document.getElementById('corTextButton').value = config.corTextButton
+            document.getElementById('cdnModelo').value = config?.cdnModelo;
+            document.getElementById('previewTitleSideA').value = config.previewTitleSideA;
+            document.getElementById('previewTitleSideB').value = config.previewTitleSideB;
+        }
+
+        window.onload = function () {
+            updateForm();
+            document.getElementById('cdnModelo').value = config.cdnModelo;
+        }
+    </script>
+</head>
+
+<body>
+    <br />
+    <br />
+    <h1>Configurações</h1>
+    <br />
+    <br />
+    <br />
+    <form id="configForm" onsubmit="saveConfigForm(); return false;" class="horizontal-form">
+        <div class="row">
+            <div>
+                <label for="tamanhoArquivos">Tamanho máximo do arquivo (MB):</label>
+                <input type="number" id="tamanhoArquivos" name="tamanhoArquivos" value="5"><br><br>
+            </div>
+            <div>
+                <label for="enviarTxt">Texto do botão de envio:</label>
+                <input type="text" id="enviarTxt" name="enviarTxt" value="Fazer upload"><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label for="limiteNumeroTentativasErro">Limite de tentativas de erro:</label>
+                <input type="number" id="limiteNumeroTentativasErro" name="limiteNumeroTentativasErro"
+                    value="3"><br><br>
+            </div>
+
+            <div>
+                <label for="corPrimary">Cor primária:</label>
+                <input type="color" id="corPrimary" name="corPrimary" value="#002DD1"><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label for="corTextCorpo">Cor texto corpo:</label>
+                <input type="color" id="corTextCorpo" name="corTextCorpo" value="#002DD1"><br><br>
+            </div>
+
+            <div>
+                <label for="corTextTitle">Cor texto título:</label>
+                <input type="color" id="corTextTitle" name="corTextTitle" value="#002DD1"><br><br>
+            </div>
+
+            <div>
+                <label for="corTextButton">Cor texto botão:</label>
+                <input type="color" id="corTextButton" name="corTextButton" value="#002DD1"><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label for="timeoutCaptura">Timeout para captura automática (ms):</label>
+                <input type="number" id="timeoutCaptura" name="timeoutCaptura" value="120000"><br><br>
+            </div>
+            <div>
+                <label for="documentosAceitos">Documentos aceitos (separados por vírgula):</label>
+                <input type="text" id="documentosAceitos" name="documentosAceitos"
+                    value="rg,cnh,dni,cin,rne,rnm,cnhdig"><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label for="fontFamily">Fonte:</label>
+                <input type="text" id="fontFamily" name="fontFamily" value="Roboto"><br><br>
+
+
+                <label for="cdnModelo">CDN Modelo:</label>
+                <input type="text" id="cdnModelo" name="cdnModelo" value=""><br><br>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label for="previewTitleSideA">Título Preview Lado A:</label>
+                <input type="text" id="previewTitleSideA" name="previewTitleSideA" value=""><br><br>
+            </div>
+            <div>
+                <label for="previewTitleSideB">Título Preview Lado B:</label>
+                <input type="text" id="previewTitleSideB" name="previewTitleSideB" value=""><br><br>
+            </div>
+        </div>
+
+        <div class="row">
+            <div style="flex-direction: row;align-items: end">
+                <input style="margin-right: 10px" type="checkbox" id="capturaEmDesktop" name="capturaEmDesktop"><br><br>
+                <label for="capturaEmDesktop">Habilitar Captura de Documentos em Desktop</label>
+            </div>
+            <div style="flex-direction: row; align-items: end;">
+                <input style="margin-right: 10px" type="checkbox" id="wizzard" name="wizzard"><br><br>
+                <label for="wizzard">Iniciar Wizard</label>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <input type="submit" value="Salvar Configurações" class="button" id="submitButton">
+        <input type="button" value="Limpar Configurações" class="button" id="clearButton" onclick="clearConfigForm()">
+    </form>
+</body>
+
+</html>
